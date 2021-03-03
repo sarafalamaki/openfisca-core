@@ -1,14 +1,16 @@
 # Changelog
 
-### 35.1.0 [#964](https://github.com/openfisca/openfisca-core/pull/964)
+### 35.1.0 [#964](https://github.com/openfisca/openfisca-core/pull/972)
 
 #### Technical changes
 
 - Added new _dependencies_ API end point to find the dependent input variables of a variable
 - Added a new property in variables.py to enable this.
 - Clarified API documentation for _trace_ endpoint
+- The payload for this endpoint is the same as the _trace_ endpoint, the results returned is a list
+  of dependant input variables, and the number of times they are used. The count can help with prioritising
+  the order of questions to ask if making something like a web form.
 
-# 35.0.1 [#968](https://github.com/openfisca/openfisca-core/pull/968)
 
 ### 35.0.4 [#965](https://github.com/openfisca/openfisca-core/pull/965)
 
